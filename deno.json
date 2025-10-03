@@ -1,0 +1,36 @@
+{
+  "tasks": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "imports": {
+    "@tailwindcss/vite": "npm:@tailwindcss/vite@^4.1.13",
+    "tailwindcss": "npm:tailwindcss@^4.1.13",
+    "vite": "npm:vite@^7.1.6",
+    "@tailwindcss/typography": "npm:@tailwindcss/typography@^0.5.18"
+  },
+  "exclude": [
+    "**/vite.config.ts.*",
+    "*/vite.config.ts.*",
+    "vite.config.ts.*"
+  ],
+  "compilerOptions": {
+    "types": [
+      "vite/client"
+    ]
+  },
+  "lint": {
+    "rules": {
+      "tags": ["recommended"]
+    }
+  },
+  "fmt": {
+    "indentWidth": 2,
+    "trailingCommas": "never",
+    "spaceAround": true,
+    "semiColons": false,
+    "singleQuote": true
+  },
+  "nodeModulesDir": "auto"
+}

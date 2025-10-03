@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Quattrocento:wght@400;700&display=swap");
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@theme {
+  --font-headline: "Oswald", sans-serif;
+  --font-display: "Quattrocento", serif;
+}
+body {
+  @apply prose lg:prose-xl prose-slate dark:prose-invert prose-headings:font-headline prose-p:font-display prose-a:text-blue-600 prose-a:hover:text-blue-500 prose-a:dark:text-blue-200 prose-a:dark:hover:text-blue-300 bg-slate-100 dark:bg-slate-800;
+}
